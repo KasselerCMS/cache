@@ -1,0 +1,23 @@
+{
+  "name": "kasseler/cache",
+  "description": "Kasseler cache package ",
+  "keywords": ["cache", "apc", "file cache", "mango", "Predis", "Memcached"],
+  "type": "library",
+  "version": "1.0.0",
+  "license": "MIT",
+  "homepage": "http://kasseler-cms.net",
+  "authors": [
+    {
+      "name": "Igor Ognichenko",
+      "email": "ognichenko.igor@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "predis/predis": "~1.0"
+  },
+  "autoload": {
+    "psr-0": { "Kasseler\\Component\\Cache\\": "" }
+  },
+  "target-dir": "Kasseler/Component/Cache"
+}
