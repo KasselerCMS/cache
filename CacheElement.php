@@ -15,9 +15,9 @@ final class CacheElement
     protected $ttl;
 
     /**
-     * @var array
+     * @var string
      */
-    protected $key = array();
+    protected $key;
 
     /**
      * @var mixed
