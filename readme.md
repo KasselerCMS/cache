@@ -75,7 +75,7 @@ Speed testing
 ===
 Test was conducted on php 5.6.
 
-|                    | 10K set |              |	10K get |                  | 10K has      |
+|              | 10K set   | 10K set    |	10K get   | 10K get    | 10K has   | 10K has    |
 |--------------|:---------:|:----------:|:---------:|:----------:|:---------:|:----------:|
 |              | time, sec | memory, Kb | time, sec | memory, Kb | time, sec | memory, Kb |
 | **Session**  | 1,0591    | 5136,7890  | 104,262   | 11933,5893 | 68,2759   | 11933,5781 |
