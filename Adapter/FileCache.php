@@ -27,7 +27,7 @@ class FileCache extends AbstractAdapter
      */
     public function __construct($dir = null)
     {
-        if (!$dir) {
+        if ($dir === null) {
             $dir = realpath(sys_get_temp_dir()).'/cache';
         }
 
@@ -184,7 +184,7 @@ class FileCache extends AbstractAdapter
             throw new CacheException(sprintf('Error with the key "%s" in cache file %s', $key, $file));
         }
         if ($data->isExpired()) {
-            $this->delete($data->getKeys());
+            $this->delete($data->key());
             return false;
         }
 

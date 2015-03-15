@@ -125,7 +125,7 @@ class SQLite3Cache extends AbstractAdapter
             $this->table,
             implode(', ', [self::ID_FIELD, self::DATA_FIELD])
         ));
-        $statement->bindValue(':id', $cacheElement->getKeys());
+        $statement->bindValue(':id', $cacheElement->key());
         $statement->bindValue(':data', $this->serialize($cacheElement));
         $statement->execute();
 
@@ -176,7 +176,7 @@ class SQLite3Cache extends AbstractAdapter
         $item = $this->unserialize($item['data']);
 
         if ($item->isExpired()) {
-            $this->delete($item->getKeys());
+            $this->delete($item->key());
             return false;
         }
 

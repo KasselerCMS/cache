@@ -17,7 +17,7 @@ Usage
 $cache = new Cache(new ArrayCache());
 $cache->set('foo', [1,2,3,4,5]);
 if ($cache->has('foo')) {
-    var_export($cache->get('test')->getData());
+    var_export($cache->get('foo')->data());
 }
 $cache->drop();
 ```
@@ -87,4 +87,3 @@ Test was conducted on php 5.6.
 | **APC**      | 0,9251    | 17,7265    | 1,1331    | 17,8046    | 0,441     | 13,226     |
 | **Xcache**   | 0,832     | 17,9140    | 0,9731    | 17,0468    | 0,439     | 13,4531    |
 | **Void**     | 0,147     | 17,3593    | 0,005     | 13,0390    | 0,174     | 13,1718    |
-

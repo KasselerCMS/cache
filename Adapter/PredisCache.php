@@ -90,8 +90,8 @@ class PredisCache extends AbstractAdapter
         $cacheElement = new CacheElement($this->getKey($key), $data, $ttl);
 
         $ttl > 0
-            ? $this->client->setex($cacheElement->getKeys(), $ttl, $this->serialize($cacheElement))
-            : $this->client->set($cacheElement->getKeys(), $this->serialize($cacheElement))
+            ? $this->client->setex($cacheElement->key(), $ttl, $this->serialize($cacheElement))
+            : $this->client->set($cacheElement->key(), $this->serialize($cacheElement))
         ;
 
         return $this;

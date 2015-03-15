@@ -17,7 +17,8 @@ class RedisCache extends AbstractAdapter
     /**
      * {@inheritdoc}
      *
-     * @param array $config
+     * @param string $server
+     * @param int    $port
      */
     public function __construct($server = 'localhost', $port = 6379)
     {
@@ -82,8 +83,8 @@ class RedisCache extends AbstractAdapter
         $cacheElement = new CacheElement($this->getKey($key), $data, $ttl);
 
         $ttl > 0
-            ? $this->redis->setex($cacheElement->getKeys(), $ttl, $this->serialize($cacheElement))
-            : $this->redis->set($cacheElement->getKeys(), $this->serialize($cacheElement))
+            ? $this->redis->setex($cacheElement->key(), $ttl, $this->serialize($cacheElement))
+            : $this->redis->set($cacheElement->key(), $this->serialize($cacheElement))
         ;
 
         return $this;

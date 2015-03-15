@@ -43,9 +43,9 @@ final class CacheElement
     }
 
     /**
-     * @return array
+     * @return string
      */
-    public function getKeys()
+    public function key()
     {
         return $this->key;
     }
@@ -53,7 +53,7 @@ final class CacheElement
     /**
      * @return integer
      */
-    public function getTtl()
+    public function ttl()
     {
         return $this->ttl;
     }
@@ -61,7 +61,7 @@ final class CacheElement
     /**
      * @return mixed
      */
-    public function getData()
+    public function data()
     {
         return $this->data;
     }

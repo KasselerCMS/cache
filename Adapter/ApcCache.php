@@ -75,7 +75,7 @@ class ApcCache extends AbstractAdapter
     public function set($key, $data, $ttl = CacheElement::DAY)
     {
         $cacheElement = new CacheElement($this->getKey($key), $data, $ttl);
-        if (!apc_store($cacheElement->getKeys(), $this->serialize($cacheElement), $cacheElement->getTtl())) {
+        if (!apc_store($cacheElement->key(), $this->serialize($cacheElement), $cacheElement->getTtl())) {
             throw new CacheException(sprintf('Error saving data with the keys "%s"', implode(', ', $key)));
         }
 

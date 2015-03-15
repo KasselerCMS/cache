@@ -18,7 +18,7 @@ abstract class AbstractAdapter implements AdapterInterface
     }
 
     /**
-     * @param $key
+     * @param mixed $key
      *
      * @return string
      */

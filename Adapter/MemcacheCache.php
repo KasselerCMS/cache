@@ -118,7 +118,7 @@ class MemcacheCache extends AbstractAdapter
     public function set($key, $data, $ttl = CacheElement::DAY)
     {
         $cacheElement = new CacheElement($this->getKey($key), $data, $ttl);
-        if (!$this->adapter->set($cacheElement->getKeys(), $this->serialize($cacheElement), 0, $ttl)) {
+        if (!$this->adapter->set($cacheElement->key(), $this->serialize($cacheElement), 0, $ttl)) {
             throw new CacheException(sprintf('Error saving data with the keys "%s"', implode(', ', $key)));
         }
 

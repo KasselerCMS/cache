@@ -65,7 +65,7 @@ class XcacheCache extends AbstractAdapter
     public function set($key, $data, $ttl = CacheElement::DAY)
     {
         $cacheElement = new CacheElement($this->getKey($key), $data, $ttl);
-        xcache_set($cacheElement->getKeys(), $this->serialize($cacheElement), $ttl);
+        xcache_set($cacheElement->key(), $this->serialize($cacheElement), $ttl);
 
         return $this;
     }

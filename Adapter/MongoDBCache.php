@@ -103,7 +103,7 @@ class MongoDBCache extends AbstractAdapter
         $cacheElement = new CacheElement($this->getKey($key), $data, $ttl);
         $this->delete($key);
         $this->getCollection()->insert([
-            'key' => $cacheElement->getKeys(),
+            'key' => $cacheElement->key(),
             'value' => $this->serialize($cacheElement),
             'ttl' => (int) $ttl + time(),
         ]);
@@ -114,11 +114,13 @@ class MongoDBCache extends AbstractAdapter
     /**
      * {@inheritdoc}
      *
-     * @return MongoDBCache
+     * @return bool
      */
     public function drop()
     {
-        return $this->getCollection()->drop();
+        $this->getCollection()->drop();
+
+        return true;
     }
 
     /**
