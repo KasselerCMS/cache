@@ -11,6 +11,8 @@ use Kasseler\Component\Cache\Exception\CacheException;
 class ApcCache extends AbstractAdapter
 {
     /**
+     * Remove key in apc cache
+     *
      * @param mixed $key
      *
      * @return ApcCache
@@ -28,6 +30,8 @@ class ApcCache extends AbstractAdapter
     }
 
     /**
+     * Get key in apc cache
+     *
      * @param mixed $key
      * @param mixed $default
      *
@@ -47,6 +51,8 @@ class ApcCache extends AbstractAdapter
     }
 
     /**
+     * Has key in apc cache
+     *
      * @param mixed $key
      *
      * @return bool|\string[]
@@ -57,6 +63,8 @@ class ApcCache extends AbstractAdapter
     }
 
     /**
+     * Set apc cache
+     *
      * @param mixed $key
      * @param mixed $data
      * @param int   $ttl
@@ -75,6 +83,8 @@ class ApcCache extends AbstractAdapter
     }
 
     /**
+     * Drop all apc cache
+     *
      * @return bool
      */
     public function drop()
@@ -83,6 +93,8 @@ class ApcCache extends AbstractAdapter
     }
 
     /**
+     * Get adapter name
+     *
      * @return string
      */
     public function getName()
