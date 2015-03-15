@@ -19,8 +19,6 @@ class FileCache extends AbstractAdapter
     private $dir;
 
     /**
-     * {@inheritdoc}
-     *
      * @param string $dir
      *
      * @throws CacheException
@@ -43,8 +41,6 @@ class FileCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @param mixed $key
      *
      * @return FileCache
@@ -58,8 +54,6 @@ class FileCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @param mixed $key
      * @param mixed $default
      *
@@ -76,8 +70,6 @@ class FileCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @param mixed $key
      *
      * @return mixed
@@ -89,8 +81,6 @@ class FileCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @param mixed $key
      * @param mixed $data
      * @param int   $ttl
@@ -111,8 +101,6 @@ class FileCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @return bool
      * @throws CacheException
      */
@@ -128,8 +116,6 @@ class FileCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @return string
      */
     public function getName()
@@ -138,8 +124,6 @@ class FileCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @param string $file
      *
      * @return bool
@@ -154,8 +138,6 @@ class FileCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @param string $name
      *
      * @return string
@@ -166,8 +148,6 @@ class FileCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @param $key
      *
      * @return mixed

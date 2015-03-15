@@ -16,8 +16,6 @@ class MemcacheCache extends AbstractAdapter
     protected $adapter;
 
     /**
-     * {@inheritdoc}
-     *
      * @param mixed  $data
      */
     public function __construct($data = null)
@@ -37,8 +35,6 @@ class MemcacheCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @param string $host
      * @param int    $port
      * @param int    $weight
@@ -50,8 +46,6 @@ class MemcacheCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @param mixed $key
      *
      * @return MemcacheCache
@@ -69,8 +63,6 @@ class MemcacheCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @param mixed $key
      * @param mixed $default
      *
@@ -90,8 +82,6 @@ class MemcacheCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @param mixed $key
      *
      * @return bool
@@ -106,8 +96,6 @@ class MemcacheCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @param mixed $key
      * @param mixed $data
      * @param int $ttl
@@ -126,8 +114,6 @@ class MemcacheCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @return bool
      */
     public function drop()
@@ -136,8 +122,6 @@ class MemcacheCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @return string
      */
     public function getName()

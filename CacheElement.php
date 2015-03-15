@@ -30,7 +30,7 @@ final class CacheElement
     protected $createdAt;
 
     /**
-     * @param array   $key An array of key
+     * @param string  $key key
      * @param mixed   $data Data
      * @param integer $ttl A time to live, default one day
      */

@@ -1,5 +1,12 @@
 Cache Component
 =======
+[![Build Status](https://scrutinizer-ci.com/g/RobinCK/cache/badges/build.png?b=master)](https://scrutinizer-ci.com/g/RobinCK/cache/build-status/master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/RobinCK/cache/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/RobinCK/cache/?branch=master)
+[![Latest Stable Version](https://poser.pugx.org/kasseler/cache/v/stable.svg)](https://packagist.org/packages/kasseler/cache) 
+[![Total Downloads](https://poser.pugx.org/kasseler/cache/downloads.svg)](https://packagist.org/packages/kasseler/cache) 
+[![Latest Unstable Version](https://poser.pugx.org/kasseler/cache/v/unstable.svg)](https://packagist.org/packages/kasseler/cache) 
+[![License](https://poser.pugx.org/kasseler/cache/license.svg)](https://packagist.org/packages/kasseler/cache)
+
 Cache library. Implements different adapters.
 
 ### Requirements

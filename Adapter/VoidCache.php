@@ -10,8 +10,6 @@ use Kasseler\Component\Cache\CacheElement;
 class VoidCache extends AbstractAdapter
 {
     /**
-     * {@inheritdoc}
-     *
      * @param $key
      *
      * @return $this
@@ -22,8 +20,6 @@ class VoidCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @param mixed $key
      * @param mixed $default
      *
@@ -35,8 +31,6 @@ class VoidCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @param mixed $key
      *
      * @return bool
@@ -47,8 +41,6 @@ class VoidCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @param mixed $key
      * @param mixed $data
      * @param int $ttl
@@ -61,8 +53,6 @@ class VoidCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @return bool
      */
     public function drop()
@@ -71,8 +61,6 @@ class VoidCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @return string
      */
     public function getName()

@@ -15,8 +15,6 @@ class RedisCache extends AbstractAdapter
     protected $redis;
 
     /**
-     * {@inheritdoc}
-     *
      * @param string $server
      * @param int    $port
      */
@@ -27,8 +25,6 @@ class RedisCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @param mixed $key
      *
      * @return RedisCache
@@ -41,8 +37,6 @@ class RedisCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @param mixed $key
      * @param mixed $default
      *
@@ -58,8 +52,6 @@ class RedisCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @param mixed $key
      *
      * @return mixed
@@ -70,8 +62,6 @@ class RedisCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @param mixed $key
      * @param mixed $data
      * @param int $ttl
@@ -91,8 +81,6 @@ class RedisCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @return bool
      */
     public function drop()
@@ -101,8 +89,6 @@ class RedisCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @return string
      */
     public function getName()

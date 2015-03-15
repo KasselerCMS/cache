@@ -15,8 +15,6 @@ class ArrayCache extends AbstractAdapter
     protected $data = [];
 
     /**
-     * {@inheritdoc}
-     *
      * @param mixed $key
      *
      * @return ArrayCache
@@ -48,8 +46,6 @@ class ArrayCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @param mixed $key
      *
      * @return bool
@@ -60,8 +56,6 @@ class ArrayCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @param mixed $key
      * @param mixed $data
      * @param int   $ttl
@@ -76,8 +70,6 @@ class ArrayCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @return array
      */
     public function drop()
@@ -88,8 +80,6 @@ class ArrayCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @return string
      */
     public function getName()

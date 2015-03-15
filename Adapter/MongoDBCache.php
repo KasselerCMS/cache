@@ -26,8 +26,6 @@ class MongoDBCache extends AbstractAdapter
     protected $collection;
 
     /**
-     * {@inheritdoc}
-     *
      * @param string $server
      * @param string $database
      * @param string $collection
@@ -46,8 +44,6 @@ class MongoDBCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @param mixed $key
      *
      * @return MongoDBCache
@@ -60,8 +56,6 @@ class MongoDBCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @param mixed $key
      * @param mixed $default
      *
@@ -78,8 +72,6 @@ class MongoDBCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @param mixed $key
      *
      * @return bool
@@ -90,8 +82,6 @@ class MongoDBCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @param mixed $key
      * @param mixed $data
      * @param int   $ttl
@@ -112,8 +102,6 @@ class MongoDBCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @return bool
      */
     public function drop()
@@ -124,8 +112,6 @@ class MongoDBCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @return string
      */
     public function getName()
@@ -142,8 +128,6 @@ class MongoDBCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @param $key
      *
      * @return bool|mixed

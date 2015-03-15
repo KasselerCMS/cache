@@ -23,7 +23,7 @@ class SQLite3Cache extends AbstractAdapter
     private $table = '__cache';
 
     /**
-     * {@inheritdoc}
+     *
      */
     public function __construct($data = null, $dir = null)
     {
@@ -57,8 +57,6 @@ class SQLite3Cache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @param $key
      *
      * @return SQLite3Cache
@@ -79,8 +77,6 @@ class SQLite3Cache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @param mixed $key
      * @param mixed $default
      *
@@ -97,8 +93,6 @@ class SQLite3Cache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @param $key
      *
      * @return bool|CacheElement
@@ -109,8 +103,6 @@ class SQLite3Cache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @param mixed $key
      * @param mixed $data
      * @param int $ttl
@@ -133,8 +125,6 @@ class SQLite3Cache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @return bool
      */
     public function drop()
@@ -143,8 +133,6 @@ class SQLite3Cache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @return string
      */
     public function getName()
@@ -153,8 +141,6 @@ class SQLite3Cache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @param $key
      *
      * @return bool|CacheElement

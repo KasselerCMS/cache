@@ -16,8 +16,6 @@ class PredisCache extends AbstractAdapter
     protected $client;
 
     /**
-     * {@inheritdoc}
-     *
      * @param array $config
      */
     public function __construct($config = [])
@@ -26,7 +24,7 @@ class PredisCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
+     *
      */
     public function __destruct()
     {
@@ -34,8 +32,6 @@ class PredisCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @param mixed $key
      *
      * @return RedisCache
@@ -48,8 +44,6 @@ class PredisCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @param mixed $key
      * @param mixed $default
      *
@@ -65,8 +59,6 @@ class PredisCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @param mixed $key
      *
      * @return mixed
@@ -77,8 +69,6 @@ class PredisCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @param mixed $key
      * @param mixed $data
      * @param int $ttl
@@ -98,8 +88,6 @@ class PredisCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @return bool
      */
     public function drop()
@@ -110,8 +98,6 @@ class PredisCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @return string
      */
     public function getName()

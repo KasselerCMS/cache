@@ -10,8 +10,6 @@ use Kasseler\Component\Cache\CacheElement;
 class XcacheCache extends AbstractAdapter
 {
     /**
-     * {@inheritdoc}
-     *
      * @param $key
      *
      * @return XcacheCache
@@ -24,8 +22,6 @@ class XcacheCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @param mixed $key
      * @param mixed $default
      *
@@ -42,8 +38,6 @@ class XcacheCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @param mixed $key
      *
      * @return bool
@@ -54,8 +48,6 @@ class XcacheCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @param mixed $key
      * @param mixed $data
      * @param int $ttl
@@ -71,8 +63,6 @@ class XcacheCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @return bool
      */
     public function drop()
@@ -84,8 +74,6 @@ class XcacheCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @return string
      */
     public function getName()
@@ -94,8 +82,6 @@ class XcacheCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @return bool
      */
     protected function checkAuthorization()

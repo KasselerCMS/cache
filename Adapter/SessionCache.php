@@ -15,7 +15,7 @@ class SessionCache extends AbstractAdapter
     protected $data = [];
 
     /**
-     * {@inheritdoc}
+     *
      */
     public function __construct()
     {
@@ -31,8 +31,6 @@ class SessionCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @param mixed $key
      *
      * @return SessionCache
@@ -48,8 +46,6 @@ class SessionCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @param mixed $key
      * @param mixed $default
      *
@@ -63,8 +59,6 @@ class SessionCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @param mixed $key
      *
      * @return bool
@@ -75,8 +69,6 @@ class SessionCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @param mixed $key
      * @param mixed $data
      * @param mixed $ttl
@@ -91,8 +83,6 @@ class SessionCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @return bool
      */
     public function drop()
@@ -103,8 +93,6 @@ class SessionCache extends AbstractAdapter
     }
 
     /**
-     * {@inheritdoc}
-     *
      * @return string
      */
     public function getName()
