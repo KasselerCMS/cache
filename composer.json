@@ -1,6 +1,6 @@
 {
   "name": "kasseler/cache",
-  "description": "Kasseler cache package ",
+  "description": "Cache library",
   "keywords": ["cache", "apc", "file cache", "mango", "Predis", "Memcached"],
   "type": "library",
   "version": "1.0.0",
