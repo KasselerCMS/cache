@@ -3,7 +3,7 @@
   "description": "Cache library",
   "keywords": ["cache", "apc", "file cache", "mango", "Predis", "Memcached"],
   "type": "library",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "homepage": "http://kasseler-cms.net",
   "authors": [
